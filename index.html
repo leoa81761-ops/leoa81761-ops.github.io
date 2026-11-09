@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Chen Yu (陈宇) — ELV Engineer &amp; Python Automation | Excel Templates</title>
-  <meta name="description" content="Chen Yu (陈宇): ELV / low-voltage systems engineer and Python automation developer in Changsha, China. Excel BoQ &amp; design calculator templates, CAD drawing, Telegram bots, Chrome extensions. Available remotely.">
+  <title>Chen Yu (陈宇) — ELV Engineer &amp; Python Automation</title>
+  <meta name="description" content="Chen Yu (陈宇): ELV / low-voltage systems engineer and Python automation developer in Changsha, China. CAD drawing, BoQ, Telegram bots, Chrome extensions, Go LLM gateway. Available remotely.">
   <meta name="author" content="Chen Yu">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://leoa81761-ops.github.io/">
@@ -17,7 +17,6 @@
       --muted: #9aafc0;
       --accent: #3d9cf0;
       --accent-hover: #5aaff5;
-      --price: #5dcaa5;
       --radius: 10px;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -74,45 +73,22 @@
     }
     p { color: var(--muted); margin-bottom: 0.75rem; }
     p:last-child { margin-bottom: 0; }
-    .cards {
-      display: grid;
-      gap: 0.85rem;
-    }
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 1rem 1.15rem;
-    }
-    .card h3 {
-      font-size: 0.98rem;
-      font-weight: 600;
-      margin-bottom: 0.35rem;
-    }
-    .card p {
-      font-size: 0.88rem;
-      margin-bottom: 0.5rem;
-    }
-    .price {
-      color: var(--price);
-      font-weight: 600;
+    ul.list {
+      list-style: none;
+      color: var(--muted);
       font-size: 0.95rem;
     }
-    .card .btn {
-      display: inline-block;
-      margin-top: 0.35rem;
-      padding: 0.4rem 0.85rem;
-      background: var(--accent);
-      color: #fff;
-      border-radius: 6px;
-      font-size: 0.85rem;
-      font-weight: 500;
-      text-decoration: none;
+    ul.list li {
+      margin-bottom: 0.55rem;
+      padding-left: 1rem;
+      position: relative;
     }
-    .card .btn:hover {
-      background: var(--accent-hover);
-      color: #fff;
-      text-decoration: none;
+    ul.list li::before {
+      content: "·";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: 700;
     }
     ul.links {
       list-style: none;
@@ -129,8 +105,29 @@
       padding: 1.15rem 1.25rem;
     }
     .contact a { font-weight: 500; }
+    .templates {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      margin-top: 0.5rem;
+    }
+    .templates h2 {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--muted);
+    }
+    .templates p,
+    .templates ul {
+      font-size: 0.85rem;
+      color: #7a8f9e;
+    }
+    .templates ul {
+      list-style: none;
+      margin-top: 0.5rem;
+    }
+    .templates li { margin-bottom: 0.35rem; }
+    .templates a { color: #6a9fc4; }
     footer {
-      margin-top: 2.5rem;
+      margin-top: 2rem;
       padding-top: 1.25rem;
       border-top: 1px solid var(--border);
       color: var(--muted);
@@ -138,7 +135,6 @@
       text-align: center;
     }
     @media (min-width: 560px) {
-      .cards.products { grid-template-columns: 1fr; }
       h1 { font-size: 2rem; }
     }
   </style>
@@ -153,35 +149,19 @@
     </header>
 
     <section>
-      <h2>About</h2>
-      <p>25+ years of ELV / intelligent-building design experience. Drafted 30,000+ CAD drawings for multiple Grade-A design institutes. Prepares Bills of Quantities (BoQ) and tendering documents.</p>
-      <p>Since 2024, working as an independent developer building Python automation scripts, Telegram bots, Chrome MV3 extensions, and an LLM API gateway in Go.</p>
+      <h2>Experience</h2>
+      <p>25+ years of ELV / intelligent-building design. Drafted 30,000+ CAD drawings for multiple Grade-A design institutes. Prepares Bills of Quantities (BoQ) and tendering documents.</p>
     </section>
 
     <section>
-      <h2>Excel Templates (Payhip)</h2>
-      <p>Ready-to-use Excel tools for low-voltage / ELV design and estimating.</p>
-      <div class="cards products">
-        <article class="card">
-          <h3>ELV / Low-Voltage BoQ Excel Template</h3>
-          <p>Bill of Quantities workbook for ELV / weak-current systems.</p>
-          <p><span class="price">$12</span></p>
-          <a class="btn" href="https://payhip.com/b/F2DTk" rel="noopener">Buy on Payhip</a>
-        </article>
-        <article class="card">
-          <h3>ELV System Design Calculator Toolkit</h3>
-          <p>Cable length, UPS sizing, NVR storage, and PoE budget calculators.</p>
-          <p><span class="price">$9</span></p>
-          <a class="btn" href="https://payhip.com/b/mo9tb" rel="noopener">Buy on Payhip</a>
-        </article>
-        <article class="card">
-          <h3>Bundle — BoQ Template + Calculator Toolkit</h3>
-          <p>Both products together. Saves $3 vs buying separately.</p>
-          <p><span class="price">$18</span></p>
-          <a class="btn" href="https://payhip.com/b/I6dfL" rel="noopener">Buy bundle on Payhip</a>
-        </article>
-      </div>
-      <p style="margin-top: 0.85rem; font-size: 0.9rem;">Store: <a href="https://payhip.com/ChenYuELVTemplates" rel="noopener">payhip.com/ChenYuELVTemplates</a></p>
+      <h2>Projects &amp; skills</h2>
+      <p>Since 2024, working as an independent developer. Focus areas:</p>
+      <ul class="list">
+        <li>Python automation scripts</li>
+        <li>Telegram bots</li>
+        <li>Chrome MV3 extensions</li>
+        <li>LLM API gateway in Go</li>
+      </ul>
     </section>
 
     <section>
@@ -198,6 +178,17 @@
         <p>Email: <a href="mailto:leoa81761@gmail.com">leoa81761@gmail.com</a></p>
         <p style="margin-top: 0.4rem;">Telegram: <a href="https://t.me/laochen3128" rel="noopener">@laochen3128</a></p>
       </div>
+    </section>
+
+    <section class="templates">
+      <h2>Templates</h2>
+      <p>Excel templates I made for ELV work:</p>
+      <ul>
+        <li><a href="https://payhip.com/b/F2DTk" rel="noopener">ELV / Low-Voltage BoQ Excel Template</a></li>
+        <li><a href="https://payhip.com/b/mo9tb" rel="noopener">ELV System Design Calculator Toolkit</a> <span style="opacity:0.85">(cable length, UPS sizing, NVR storage, PoE budget)</span></li>
+        <li><a href="https://payhip.com/b/I6dfL" rel="noopener">BoQ Template + Calculator Toolkit</a> (both together)</li>
+        <li>More: <a href="https://payhip.com/ChenYuELVTemplates" rel="noopener">payhip.com/ChenYuELVTemplates</a></li>
+      </ul>
     </section>
 
     <footer>
